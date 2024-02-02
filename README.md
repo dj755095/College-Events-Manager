@@ -54,42 +54,42 @@
 
 ## Screenshots
 
-- **Signup Page**
-  ![Signup Page](screenshots/signup.png)
 
-  - **Login Page**
-  ![Login Page](screenshots/Login.png)
+- **Signup Page**<br>
+  <img src="screenshots/signup.png" width="200">
 
-- **Institute Signup (Step 1)**
-  ![Institute Signup (Step 1)](screenshots/InstituteSignup1.png)
+- **Login Page**<br>
+  <img src="screenshots/Login.png" width="200">
 
-- **Institute Signup (Step 2)**
-  ![Institute Signup (Step 2)](screenshots/InstituteSignup2.png)
+- **Institute Signup (Step 1)**<br>
+  <img src="screenshots/InstituteSignup1.png" width="200">
 
-  - **Student Signup**
-  ![Student Signup (Step 1)](screenshots/StudentSignup1.png)
+- **Institute Signup (Step 2)**<br>
+  <img src="screenshots/InstituteSignup2.png" width="200">
 
-- **Student Main Page**
-  ![Student Main Page](screenshots/StutentMain.png)
+- **Student Signup**<br>
+  <img src="screenshots/StudentSignup1.png" width="200">
 
-- **Event Details**
-  ![Event Details](screenshots/EventsDetail.png)
+- **Student Main Page**<br>
+  <img src="screenshots/StutentMain.png" width="200">
 
-- **User Profile**
-  ![User Profile](screenshots/Profile.png)
+- **Event Details**<br>
+  <img src="screenshots/EventsDetail.png" width="200">
 
+- **User Profile**<br>
+  <img src="screenshots/Profile.png" width="200">
 
-- **Institute Page**
-  ![Institute Page](screenshots/InstitutePage.png)
+- **Institute Page**<br>
+  <img src="screenshots/InstitutePage.png" width="200">
 
-  - **Upload Page**
-  ![Upload Page](screenshots/UploadPage.png)
+- **Upload Page**<br>
+  <img src="screenshots/UploadPage.png" width="200">
 
-    - **Admin Page**
-  ![Admin Page](screenshots/AdminPage1.png)
+- **Admin Page**<br>
+  <img src="screenshots/AdminPage1.png" width="200">
 
-- **Institute Details (Approved)**
-  ![Institute Details (Approved)](screenshots/InstituteDetails_approve.png)
+- **Institute Details (Approved)**<br>
+  <img src="screenshots/InstituteDetails_approve.png" width="200">
 
 
 
