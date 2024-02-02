@@ -109,4 +109,5 @@
     <orderEntry type="library" scope="TEST" name="Gradle: com.github.clans:fab:1.6.4@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: com.github.MikeOrtiz:TouchImageView:1.4.1@aar" level="project" />
   </component>
+  <component name="TestModuleProperties" production-module="EventInsti.app.main" />
 </module>
