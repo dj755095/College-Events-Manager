@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignupInstitute">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Enter your Institute Name"
+            android:textSize="22dp" />
+
+        <EditText
+            android:id="@+id/inameI"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/lavender_border"
+            android:hint="Institute name"
+            android:paddingStart="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Enter your Institute Code"
+            android:textSize="22dp" />
+
+        <EditText
+            android:id="@+id/icodeI"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/lavender_border"
+            android:hint="Institute Code"
+            android:paddingStart="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Enter your Institute Address"
+            android:textSize="22dp" />
+
+        <EditText
+            android:id="@+id/adressI"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/lavender_border"
+            android:hint="Institute Address"
+            android:paddingStart="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Enter your Phone Number"
+            android:textSize="22dp" />
+
+        <EditText
+            android:id="@+id/phoneI"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/lavender_border"
+            android:hint="Phone Number"
+            android:paddingStart="20dp" />
+
+        <RadioGroup
+            android:id="@+id/clgTypeRadio"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioJunior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Junior College"
+                android:checked="true"
+                android:textSize="20sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/radioDegree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Degree College"
+                android:textSize="20sp" />
+            <RadioButton
+                android:id="@+id/radioEngineering"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Engineering Degree College"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/radioPolytechnic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Polytechnic College"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:id="@+id/clgTypeLayout"
+            android:orientation="horizontal">
+            <CheckBox android:id="@+id/checkbox_science"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="Science" />
+            <CheckBox android:id="@+id/checkbox_commerce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="Commerce"/>
+            <CheckBox android:id="@+id/checkbox_arts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="Arts"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/degreeLayout"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <CheckBox android:id="@+id/checkbox_BA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="B.A" />
+            <CheckBox android:id="@+id/checkbox_BCOM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="B.COM"/>
+            <CheckBox android:id="@+id/checkbox_BSC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="B.Sc"/>
+            <CheckBox android:id="@+id/checkbox_BTECH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="BTECH"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/BranchLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/BranchLayout1"
+            android:orientation="horizontal">
+            <CheckBox android:id="@+id/checkbox_IT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="IT/CO" />
+            <CheckBox android:id="@+id/checkbox_ME"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Mechanical"/>
+            <CheckBox android:id="@+id/checkbox_EJ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Electrical"/>
+            <CheckBox android:id="@+id/checkbox_CE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Civil"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/BranchLayout2"
+            android:orientation="horizontal">
+            <CheckBox android:id="@+id/checkbox_Production"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Production" />
+            <CheckBox android:id="@+id/checkbox_Textile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Textile"/>
+        </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Upload Profile Picture"
+            android:id="@+id/uploadInstituteProfie"
+            android:textSize="18sp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/lavender"
+            app:cornerRadius = "360dp"/>
+
+        <Button
+            android:id="@+id/signupInstiSubmit"
+            android:text="Submit"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lavender_border"
+            />
+    </LinearLayout>
+</ScrollView>

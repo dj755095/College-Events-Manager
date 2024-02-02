@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "179588527284",
+    "project_id": "eventinstidj",
+    "storage_bucket": "eventinstidj.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179588527284:android:c42cff5d22ee4868d613e1",
+        "android_client_info": {
+          "package_name": "com.example.eventinsti"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDz4uVQPDpDHQM2ia0Qea5Y3lq41XjENVo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

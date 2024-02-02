@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InstiDetail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Username: "
+            android:textStyle="bold"
+            android:textColor="@color/lavender" />
+
+        <TextView
+            android:id="@+id/text_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Your username data here"
+            android:textColor="@color/lavender" />
+    </LinearLayout>
+
+    <!-- Institute Name -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Institute Name: "
+            android:textStyle="bold"
+            android:textColor="@color/lavender" />
+
+        <TextView
+            android:id="@+id/text_institute_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Your institute name data here"
+            android:textColor="@color/lavender" />
+    </LinearLayout>
+
+    <!-- Institute Code -->
+    <!-- Replace "Your institute code data here" with actual data -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Institute Code: "
+            android:textStyle="bold"
+            android:textColor="@color/lavender" />
+
+        <TextView
+            android:id="@+id/text_institute_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Your institute code data here"
+            android:textColor="@color/lavender" />
+    </LinearLayout>
+
+    <!-- Institute Address -->
+    <!-- Replace "Your institute address data here" with actual data -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Institute Address: "
+            android:textStyle="bold"
+            android:textColor="@color/lavender" />
+
+        <TextView
+            android:id="@+id/text_institute_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Your institute address data here"
+            android:textColor="@color/lavender" />
+    </LinearLayout>
+
+    <!-- Institute Phone -->
+    <!-- Replace "Your institute phone data here" with actual data -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Institute Phone: "
+            android:textStyle="bold"
+            android:textColor="@color/lavender" />
+
+        <TextView
+            android:id="@+id/text_institute_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Your institute phone data here"
+            android:textColor="@color/lavender" />
+    </LinearLayout>
+
+    <!-- College Type -->
+    <!-- Replace "Your college type data here" with actual data -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="College Type: "
+            android:textStyle="bold"
+            android:textColor="@color/lavender" />
+
+        <TextView
+            android:id="@+id/text_college_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Your college type data here"
+            android:textColor="@color/lavender" />
+    </LinearLayout>
+
+    <!-- College Fields -->
+    <!-- Replace "Your college fields data here" with actual data -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="College Fields: "
+            android:textStyle="bold"
+            android:textColor="@color/lavender" />
+
+        <TextView
+            android:id="@+id/text_college_fields"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Your college fields data here"
+            android:textColor="@color/lavender" />
+    </LinearLayout>
+
+    <!-- Degree Type -->
+    <!-- Replace "Your degree type data here" with actual data -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Degree Type: "
+            android:textStyle="bold"
+            android:textColor="@color/lavender" />
+
+        <TextView
+            android:id="@+id/text_degree_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Your degree type data here"
+            android:textColor="@color/lavender" />
+    </LinearLayout>
+
+    <!-- Branch Type -->
+    <!-- Replace "Your branch type data here" with actual data -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Branch Type: "
+            android:textStyle="bold"
+            android:textColor="@color/lavender" />
+
+        <TextView
+            android:id="@+id/text_branch_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Your branch type data here"
+            android:textColor="@color/lavender" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/approveInstiBtns"
+        android:text="Approve"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lavender_border"
+        />
+
+</LinearLayout>
