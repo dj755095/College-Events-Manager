@@ -1,238 +1,234 @@
 [
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\mipmap-hdpi_ic_launcher_adaptive_fore.png.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\mipmap-hdpi\\ic_launcher_adaptive_fore.png"
+        "merged": "com.example.eventinsti.app-merged_res-45:/layout_activity_tempdatacheck.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/layout/activity_tempdatacheck.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\layout_activity_signup.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\layout\\activity_signup.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/mipmap-xxxhdpi_ic_launcher_adaptive_back.png.flat",
+        "source": "com.example.eventinsti.app-main-47:/mipmap-xxxhdpi/ic_launcher_adaptive_back.png"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\layout_activity_signup_institute.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\layout\\activity_signup_institute.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/drawable_selected_background.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/drawable/selected_background.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\layout_activity_profile.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\layout\\activity_profile.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/mipmap-xxhdpi_ic_launcher_adaptive_back.png.flat",
+        "source": "com.example.eventinsti.app-main-47:/mipmap-xxhdpi/ic_launcher_adaptive_back.png"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\layout_item.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\layout\\item.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\drawable_baseline_verified_24.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\drawable\\baseline_verified_24.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/layout_recycler_item.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/layout/recycler_item.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\drawable_uploadimg.png.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\drawable\\uploadimg.png"
+        "merged": "com.example.eventinsti.app-merged_res-45:/mipmap-xhdpi_ic_launcher_adaptive_fore.png.flat",
+        "source": "com.example.eventinsti.app-main-47:/mipmap-xhdpi/ic_launcher_adaptive_fore.png"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "com.example.eventinsti.app-merged_res-45:/layout_activity_profile.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/layout/activity_profile.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "com.example.eventinsti.app-merged_res-45:/layout_activity_user_main.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/layout/activity_user_main.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\drawable_baseline_thumb_up_24.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\drawable\\baseline_thumb_up_24.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/drawable_akwhitelogo.png.flat",
+        "source": "com.example.eventinsti.app-main-47:/drawable/akwhitelogo.png"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\drawable_selected_background.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\drawable\\selected_background.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/drawable_uploadimg.png.flat",
+        "source": "com.example.eventinsti.app-main-47:/drawable/uploadimg.png"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\drawable_akwhitelogo.png.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\drawable\\akwhitelogo.png"
+        "merged": "com.example.eventinsti.app-merged_res-45:/layout_activity_signup_institute.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/layout/activity_signup_institute.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\mipmap-anydpi-v33_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\mipmap-anydpi-v33\\ic_launcher.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/layout_activity_institute.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/layout/activity_institute.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\xml\\backup_rules.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/drawable_baseline_verified_24.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/drawable/baseline_verified_24.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\layout_progress_layout.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\layout\\progress_layout.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\drawable_ic_baseline_lock_24.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\drawable\\ic_baseline_lock_24.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.example.eventinsti.app-main-47:/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\mipmap-xxxhdpi_ic_launcher_adaptive_back.png.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\mipmap-xxxhdpi\\ic_launcher_adaptive_back.png"
+        "merged": "com.example.eventinsti.app-merged_res-45:/drawable_baseline_not_verified.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/drawable/baseline_not_verified.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/drawable-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\mipmap-xxxhdpi_ic_launcher_adaptive_fore.png.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\mipmap-xxxhdpi\\ic_launcher_adaptive_fore.png"
+        "merged": "com.example.eventinsti.app-merged_res-45:/xml_backup_rules.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/xml/backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\drawable_baseline_search_24.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\drawable\\baseline_search_24.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/drawable_profilebkg.png.flat",
+        "source": "com.example.eventinsti.app-main-47:/drawable/profilebkg.png"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\mipmap-mdpi_ic_launcher_adaptive_back.png.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\mipmap-mdpi\\ic_launcher_adaptive_back.png"
+        "merged": "com.example.eventinsti.app-merged_res-45:/mipmap-hdpi_ic_launcher_adaptive_back.png.flat",
+        "source": "com.example.eventinsti.app-main-47:/mipmap-hdpi/ic_launcher_adaptive_back.png"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\mipmap-xhdpi_ic_launcher_adaptive_fore.png.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\mipmap-xhdpi\\ic_launcher_adaptive_fore.png"
+        "merged": "com.example.eventinsti.app-merged_res-45:/drawable_ic_baseline_lock_24.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/drawable/ic_baseline_lock_24.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\drawable_unselected_background.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\drawable\\unselected_background.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/mipmap-xxxhdpi_ic_launcher_adaptive_fore.png.flat",
+        "source": "com.example.eventinsti.app-main-47:/mipmap-xxxhdpi/ic_launcher_adaptive_fore.png"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "com.example.eventinsti.app-merged_res-45:/layout_activity_detail.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/layout/activity_detail.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\layout_activity_tempdatacheck.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\layout\\activity_tempdatacheck.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/drawable_baseline_add_24.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/drawable/baseline_add_24.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\drawable_pagebkg.png.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\drawable\\pagebkg.png"
+        "merged": "com.example.eventinsti.app-merged_res-45:/drawable_ic_baseline_person_24.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/drawable/ic_baseline_person_24.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "com.example.eventinsti.app-merged_res-45:/mipmap-mdpi_ic_launcher_adaptive_back.png.flat",
+        "source": "com.example.eventinsti.app-main-47:/mipmap-mdpi/ic_launcher_adaptive_back.png"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\drawable_baseline_clear_24.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\drawable\\baseline_clear_24.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/drawable_ic_baseline_email_24.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/drawable/ic_baseline_email_24.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\layout_activity_upload.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\layout\\activity_upload.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/drawable_pagebkg.png.flat",
+        "source": "com.example.eventinsti.app-main-47:/drawable/pagebkg.png"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\drawable_profilebkg.png.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\drawable\\profilebkg.png"
+        "merged": "com.example.eventinsti.app-merged_res-45:/layout_activity_insti_detail.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/layout/activity_insti_detail.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/mipmap-hdpi_ic_launcher_adaptive_fore.png.flat",
+        "source": "com.example.eventinsti.app-main-47:/mipmap-hdpi/ic_launcher_adaptive_fore.png"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\drawable_ic_baseline_person_24.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\drawable\\ic_baseline_person_24.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.example.eventinsti.app-main-47:/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\layout_activity_signup_student.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\layout\\activity_signup_student.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.example.eventinsti.app-main-47:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\layout_activity_detail.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\layout\\activity_detail.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/drawable_white_background.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/drawable/white_background.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\drawable\\ic_launcher_background.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.example.eventinsti.app-main-47:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\layout_activity_edit_profile.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\layout\\activity_edit_profile.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/layout_item.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/layout/item.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\mipmap-xxhdpi_ic_launcher_adaptive_back.png.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\mipmap-xxhdpi\\ic_launcher_adaptive_back.png"
+        "merged": "com.example.eventinsti.app-merged_res-45:/drawable_ic_baseline_person_pin_24.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/drawable/ic_baseline_person_pin_24.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\mipmap-xhdpi_ic_launcher_adaptive_back.png.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\mipmap-xhdpi\\ic_launcher_adaptive_back.png"
+        "merged": "com.example.eventinsti.app-merged_res-45:/drawable_baseline_clear_24.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/drawable/baseline_clear_24.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\xml\\data_extraction_rules.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/layout_activity_edit_profile.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/layout/activity_edit_profile.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\drawable_baseline_not_verified.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\drawable\\baseline_not_verified.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/drawable_unselected_background.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/drawable/unselected_background.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\layout_activity_insti_detail.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\layout\\activity_insti_detail.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/drawable_lavender_border.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/drawable/lavender_border.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\drawable_lavender_border.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\drawable\\lavender_border.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/mipmap-anydpi-v33_ic_launcher.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/mipmap-anydpi-v33/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\mipmap-mdpi_ic_launcher_adaptive_fore.png.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\mipmap-mdpi\\ic_launcher_adaptive_fore.png"
-    },
-    {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\mipmap-xxhdpi_ic_launcher_adaptive_fore.png.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\mipmap-xxhdpi\\ic_launcher_adaptive_fore.png"
-    },
-    {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\drawable_ic_baseline_email_24.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\drawable\\ic_baseline_email_24.xml"
-    },
-    {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\layout\\activity_login.xml"
-    },
-    {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\drawable_ic_baseline_person_pin_24.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\drawable\\ic_baseline_person_pin_24.xml"
-    },
-    {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\layout_activity_user_main.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\layout\\activity_user_main.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/layout_activity_signup_student.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/layout/activity_signup_student.xml"
     },
     {
         "merged": "com.example.eventinsti.app-merged_res-45:/layout_activity_upload.xml.flat",
         "source": "com.example.eventinsti.app-main-47:/layout/activity_upload.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "com.example.eventinsti.app-merged_res-45:/drawable_baseline_pfp.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/drawable/baseline_pfp.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\mipmap-hdpi_ic_launcher_adaptive_back.png.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\mipmap-hdpi\\ic_launcher_adaptive_back.png"
+        "merged": "com.example.eventinsti.app-merged_res-45:/mipmap-xhdpi_ic_launcher_adaptive_back.png.flat",
+        "source": "com.example.eventinsti.app-main-47:/mipmap-xhdpi/ic_launcher_adaptive_back.png"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\layout_recycler_item.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\layout\\recycler_item.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/mipmap-xxhdpi_ic_launcher_adaptive_fore.png.flat",
+        "source": "com.example.eventinsti.app-main-47:/mipmap-xxhdpi/ic_launcher_adaptive_fore.png"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\drawable_baseline_thumb_up_dislike.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\drawable\\baseline_thumb_up_dislike.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/layout_progress_layout.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/layout/progress_layout.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\drawable_baseline_add_24.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\drawable\\baseline_add_24.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\drawable_white_background.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\drawable\\white_background.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.example.eventinsti.app-main-47:/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\drawable_baseline_pfp.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\drawable\\baseline_pfp.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/drawable_baseline_search_24.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/drawable/baseline_search_24.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\layout_activity_admin.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\layout\\activity_admin.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/layout_activity_login.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/layout/activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-merged_res-45:\\layout_activity_institute.xml.flat",
-        "source": "C:\\Users\\Divyan\\.gradle\\daemon\\7.5\\com.example.eventinsti.app-main-47:\\layout\\activity_institute.xml"
+        "merged": "com.example.eventinsti.app-merged_res-45:/drawable_baseline_thumb_up_dislike.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/drawable/baseline_thumb_up_dislike.xml"
+    },
+    {
+        "merged": "com.example.eventinsti.app-merged_res-45:/layout_activity_signup.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/layout/activity_signup.xml"
+    },
+    {
+        "merged": "com.example.eventinsti.app-merged_res-45:/layout_activity_admin.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/layout/activity_admin.xml"
+    },
+    {
+        "merged": "com.example.eventinsti.app-merged_res-45:/mipmap-mdpi_ic_launcher_adaptive_fore.png.flat",
+        "source": "com.example.eventinsti.app-main-47:/mipmap-mdpi/ic_launcher_adaptive_fore.png"
+    },
+    {
+        "merged": "com.example.eventinsti.app-merged_res-45:/drawable_baseline_thumb_up_24.xml.flat",
+        "source": "com.example.eventinsti.app-main-47:/drawable/baseline_thumb_up_24.xml"
     }
 ]
