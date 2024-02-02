@@ -55,41 +55,41 @@
 ## Screenshots
 
 - **Signup Page**
-  ![Signup Page](signup.png)
+  ![Signup Page](screenshots/signup.png)
 
   - **Login Page**
-  ![Login Page](Login.png)
+  ![Login Page](screenshots/Login.png)
 
 - **Institute Signup (Step 1)**
-  ![Institute Signup (Step 1)](InstituteSignup1.png)
+  ![Institute Signup (Step 1)](screenshots/InstituteSignup1.png)
 
 - **Institute Signup (Step 2)**
-  ![Institute Signup (Step 2)](InstituteSignup2.png)
+  ![Institute Signup (Step 2)](screenshots/InstituteSignup2.png)
 
   - **Student Signup**
-  ![Student Signup (Step 1)](StudentSignup1.png)
+  ![Student Signup (Step 1)](screenshots/StudentSignup1.png)
 
 - **Student Main Page**
-  ![Student Main Page](StutentMain.png)
+  ![Student Main Page](screenshots/StutentMain.png)
 
 - **Event Details**
-  ![Event Details](EventsDetail.png)
+  ![Event Details](screenshots/EventsDetail.png)
 
 - **User Profile**
-  ![User Profile](Profile.png)
+  ![User Profile](screenshots/Profile.png)
 
 
 - **Institute Page**
-  ![Institute Page](InstitutePage.png)
+  ![Institute Page](screenshots/InstitutePage.png)
 
   - **Upload Page**
-  ![Upload Page](UploadPage.png)
+  ![Upload Page](screenshots/UploadPage.png)
 
     - **Admin Page**
-  ![Admin Page](AdminPage1.png)
+  ![Admin Page](screenshots/AdminPage1.png)
 
 - **Institute Details (Approved)**
-  ![Institute Details (Approved)](InstituteDetails_approve.png)
+  ![Institute Details (Approved)](screenshots/InstituteDetails_approve.png)
 
 
 
