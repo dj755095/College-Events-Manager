@@ -54,17 +54,44 @@
 
 ## Screenshots
 
-- Student Page
-  ![Student Page](screenshots/student_page.png)
+- **Signup Page**
+  ![Signup Page](signup.png)
 
-- Event Details
-  ![Event Details](screenshots/event_details.png)
+  - **Login Page**
+  ![Login Page](Login.png)
 
-- Institute Page
-  ![Institute Page](screenshots/institute_page.png)
+- **Institute Signup (Step 1)**
+  ![Institute Signup (Step 1)](InstituteSignup1.png)
 
-- Admin Page
-  ![Admin Page](screenshots/admin_page.png)
+- **Institute Signup (Step 2)**
+  ![Institute Signup (Step 2)](InstituteSignup2.png)
+
+  - **Student Signup**
+  ![Student Signup (Step 1)](StudentSignup1.png)
+
+- **Student Main Page**
+  ![Student Main Page](StutentMain.png)
+
+- **Event Details**
+  ![Event Details](EventsDetail.png)
+
+- **User Profile**
+  ![User Profile](Profile.png)
+
+
+- **Institute Page**
+  ![Institute Page](InstitutePage.png)
+
+  - **Upload Page**
+  ![Upload Page](UploadPage.png)
+
+    - **Admin Page**
+  ![Admin Page](AdminPage1.png)
+
+- **Institute Details (Approved)**
+  ![Institute Details (Approved)](InstituteDetails_approve.png)
+
+
 
 ## Project Description
 
