@@ -130,9 +130,11 @@ public class LoginActivity extends AppCompatActivity {
                             intent.putExtra("username", usernameFromDB);
                             intent.putExtra("password", passwordFromDB);
                             startActivity(intent);
+                            finish();
                         }else if(nameFromDB.equals("a")){
                             Intent intent = new Intent(LoginActivity.this, AdminActivity.class);
                             startActivity(intent);
+                            finish();
                         }else if(nameFromDB.equals("i")){
                             Intent intent = new Intent(LoginActivity.this, InstituteActivity.class);
                             intent.putExtra("Iusername", usernameFromDB);
@@ -141,6 +143,7 @@ public class LoginActivity extends AppCompatActivity {
                             intent.putExtra("password", passwordFromDB);
                            // intent.putExtra("verifyStatus", verifyStatsFromDB);
                             startActivity(intent);
+                            finish();
                         }else{
                             Toast.makeText(LoginActivity.this, "Something is Wrong", Toast.LENGTH_SHORT).show();
                         }

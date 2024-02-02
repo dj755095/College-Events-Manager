@@ -80,9 +80,9 @@
 <!--        android:layout_margin="20dp"-->
 <!--        app:srcCompat="@drawable/baseline_thumb_up_dislike" />-->
 
-        <ImageView
+        <com.ortiz.touchview.TouchImageView
             android:layout_width="400dp"
-            android:layout_height="200dp"
+            android:layout_height="400dp"
             android:id="@+id/detailImage"
             android:padding="8dp"
             android:layout_gravity="center"

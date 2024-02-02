@@ -8,13 +8,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.ortiz.touchview.TouchImageView;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class DetailActivity extends AppCompatActivity {
     TextView detailDesc, detailTitle, detailLink, detailInstitute;
     ImageView detailStatus;
-    ImageView detailImage,like;
+    TouchImageView detailImage;
+    ImageView like;
     String imageUrl = "";
     String eventUrl = "";
     boolean click = false;
@@ -58,9 +64,13 @@ public class DetailActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String url = eventUrl;
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse(url));
-                startActivity(i);
+                if (isValidUrl(url)) {
+                    Intent i = new Intent(Intent.ACTION_VIEW);
+                    i.setData(Uri.parse(url));
+                    startActivity(i);
+                } else {
+                    Toast.makeText(getApplicationContext(), "Invalid URL", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -76,5 +86,18 @@ public class DetailActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+    private boolean isValidUrl(String url) {
+        // Define a simple regex pattern for a valid URL
+        String urlPattern = "^((http|https)://)?([a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}(/[a-zA-Z0-9-_.~%]*)*$";
+
+        // Create a Pattern object
+        Pattern pattern = Pattern.compile(urlPattern);
+
+        // Create a Matcher object
+        Matcher matcher = pattern.matcher(url);
+
+        // Check if the URL matches the pattern
+        return matcher.matches();
     }
 }

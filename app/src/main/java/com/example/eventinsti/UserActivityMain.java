@@ -37,14 +37,14 @@ public class UserActivityMain extends AppCompatActivity {
     List<UploadHelperClass> dataList;
     DatabaseReference databaseReference;
     ValueEventListener eventListener;
-    Button signoutBtn2;
+//    Button signoutBtn2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_main);
         fetchDataFromIntent();
         profileFromUser = findViewById(R.id.profileFromUser);
-        signoutBtn2 = findViewById(R.id.signoutBtn2);
+//        signoutBtn2 = findViewById(R.id.signoutBtn2);
 
         searchView = findViewById(R.id.search);
         searchView.clearFocus();
@@ -82,14 +82,14 @@ public class UserActivityMain extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        signoutBtn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(UserActivityMain.this,LoginActivity.class);
-                startActivity(i);
-                finish();
-            }
-        });
+//        signoutBtn2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent i = new Intent(UserActivityMain.this,LoginActivity.class);
+//                startActivity(i);
+//                finish();
+//            }
+//        });
     }
     public void searchList(String text){
         ArrayList<UploadHelperClass> searchList = new ArrayList<>();
@@ -116,6 +116,15 @@ public class UserActivityMain extends AppCompatActivity {
                 break;
             case "Civil":
                 databaseReference = FirebaseDatabase.getInstance().getReference("eventsCE");
+                break;
+            case "Production":
+                databaseReference = FirebaseDatabase.getInstance().getReference("eventsPRO");
+                break;
+            case "Textile":
+                databaseReference = FirebaseDatabase.getInstance().getReference("eventsTXT");
+                break;
+            case "ELT":
+                databaseReference = FirebaseDatabase.getInstance().getReference("eventsELT");
                 break;
             default:
                 databaseReference = FirebaseDatabase.getInstance().getReference("Institute Events");

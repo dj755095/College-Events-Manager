@@ -31,15 +31,18 @@ import com.google.firebase.storage.UploadTask;
 
 import java.text.DateFormat;
 import java.util.Calendar;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class UploadActivity extends AppCompatActivity {
     String UserName,svStatus;
-    CheckBox IT,EJ,ME,CE;
+    CheckBox IT,EJ,ME,CE,PRO,TXT,ELT;
 
     ImageView uploadImage;
     Button saveButton;
     EditText title,desc,link;
     String imageURL;
+    String profileURL;
     Uri uri;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +58,9 @@ public class UploadActivity extends AppCompatActivity {
         EJ = findViewById(R.id.checkbox_EJ);
         ME = findViewById(R.id.checkbox_ME);
         CE = findViewById(R.id.checkbox_CE);
+        PRO = findViewById(R.id.checkbox_PRO);
+        TXT = findViewById(R.id.checkbox_TXT);
+        ELT = findViewById(R.id.checkbox_ELT);
 
         ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(
                 new ActivityResultContracts.StartActivityForResult(),
@@ -84,7 +90,11 @@ public class UploadActivity extends AppCompatActivity {
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                saveData();
+                if (isValidUrl(link.getText().toString())) {
+                    saveData();
+                } else {
+                    Toast.makeText(UploadActivity.this, "Invalid URL", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
@@ -119,7 +129,8 @@ public class UploadActivity extends AppCompatActivity {
         String stitle = title.getText().toString();
         String sdesc = desc.getText().toString();
         String slink = link.getText().toString();
-        UploadHelperClass dataClass = new UploadHelperClass(UserName,svStatus, stitle, sdesc, slink, imageURL);
+
+        UploadHelperClass dataClass = new UploadHelperClass(UserName,svStatus, stitle, sdesc, slink, imageURL, profileURL);
         //We are changing the child from title to currentDate,
         // because we will be updating title as well and it may affect child value.
         String currentDate = DateFormat.getDateTimeInstance().format(Calendar.getInstance().getTime());
@@ -144,7 +155,7 @@ public class UploadActivity extends AppCompatActivity {
         String stitle = title.getText().toString();
         String sdesc = desc.getText().toString();
         String slink = link.getText().toString();
-        UploadHelperClass dataClass = new UploadHelperClass(UserName,svStatus, stitle, sdesc, slink, imageURL);
+        UploadHelperClass dataClass = new UploadHelperClass(UserName,svStatus, stitle, sdesc, slink, imageURL, profileURL);
         //DatabaseReference reference1;
         String currentDate = DateFormat.getDateTimeInstance().format(Calendar.getInstance().getTime());
 
@@ -213,15 +224,78 @@ public class UploadActivity extends AppCompatActivity {
                     });
         }
 
+        if(PRO.isChecked()){
+            FirebaseDatabase.getInstance().getReference("eventsPRO").child(currentDate)
+                    .setValue(dataClass).addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+                            if (task.isSuccessful()){
+                                Toast.makeText(UploadActivity.this, "Saved", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Toast.makeText(UploadActivity.this, e.getMessage().toString(), Toast.LENGTH_SHORT).show();
+                        }
+                    });
+        }
+
+        if(TXT.isChecked()){
+            FirebaseDatabase.getInstance().getReference("eventsTXT").child(currentDate)
+                    .setValue(dataClass).addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+                            if (task.isSuccessful()){
+                                Toast.makeText(UploadActivity.this, "Saved", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Toast.makeText(UploadActivity.this, e.getMessage().toString(), Toast.LENGTH_SHORT).show();
+                        }
+                    });
+        }
+        if(ELT.isChecked()){
+            FirebaseDatabase.getInstance().getReference("eventsELT").child(currentDate)
+                    .setValue(dataClass).addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+                            if (task.isSuccessful()){
+                                Toast.makeText(UploadActivity.this, "Saved", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Toast.makeText(UploadActivity.this, e.getMessage().toString(), Toast.LENGTH_SHORT).show();
+                        }
+                    });
+        }
+
         finish();
     }
 
 
 
+    private boolean isValidUrl(String url) {
+        // Define a simple regex pattern for a valid URL
+        String urlPattern = "^((http|https)://://)?([a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}(/[a-zA-Z0-9-_.~%]*)*$";
 
+        // Create a Pattern object
+        Pattern pattern = Pattern.compile(urlPattern);
+
+        // Create a Matcher object
+        Matcher matcher = pattern.matcher(url);
+
+        // Check if the URL matches the pattern
+        return matcher.matches();
+    }
 
     private void getNameAndStatus() {
         Intent i = getIntent();
+        profileURL = i.getStringExtra("profileURL");
         UserName = i.getStringExtra("username");
         svStatus = i.getStringExtra("verifyStatus");
     }

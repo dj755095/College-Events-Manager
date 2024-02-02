@@ -135,7 +135,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="25dp"
                 android:text="Arts"/>
-
         </LinearLayout>
 
         <LinearLayout
@@ -165,11 +164,18 @@
                 android:layout_marginLeft="25dp"
                 android:text="BTECH"/>
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/BranchLayout">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:id="@+id/BranchLayout"
+            android:id="@+id/BranchLayout1"
             android:orientation="horizontal">
             <CheckBox android:id="@+id/checkbox_IT"
                 android:layout_width="wrap_content"
@@ -194,11 +200,39 @@
 
         </LinearLayout>
 
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/BranchLayout2"
+            android:orientation="horizontal">
+            <CheckBox android:id="@+id/checkbox_Production"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Production" />
+            <CheckBox android:id="@+id/checkbox_Textile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Textile"/>
+        </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Upload Profile Picture"
+            android:id="@+id/uploadInstituteProfie"
+            android:textSize="18sp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/lavender"
+            app:cornerRadius = "360dp"/>
+
         <Button
             android:id="@+id/signupInstiSubmit"
             android:text="Submit"
             android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="30dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:layout_width="match_parent"

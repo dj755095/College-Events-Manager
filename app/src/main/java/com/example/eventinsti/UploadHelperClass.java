@@ -10,6 +10,15 @@ public class UploadHelperClass {
     private String eventDsc;
     private String eventLink;
     private String eventImg;
+    private String profileURL;
+
+    public String getProfileURL() {
+        return profileURL;
+    }
+
+    public void setProfileURL(String profileURL) {
+        this.profileURL = profileURL;
+    }
 
     public String getUsername() {
         return username;
@@ -35,13 +44,14 @@ public class UploadHelperClass {
         return eventImg;
     }
 
-    public UploadHelperClass(String username, String verifyStatus, String eventTitle, String eventDsc, String eventLink, String eventImg) {
+    public UploadHelperClass(String username, String verifyStatus, String eventTitle, String eventDsc, String eventLink, String eventImg, String profileURL) {
         this.username = username;
         this.verifyStatus = verifyStatus;
         this.eventTitle = eventTitle;
         this.eventDsc = eventDsc;
         this.eventLink = eventLink;
         this.eventImg = eventImg;
+        this.profileURL = profileURL;
     }
     public UploadHelperClass() {
     }

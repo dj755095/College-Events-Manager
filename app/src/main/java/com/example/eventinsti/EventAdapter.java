@@ -17,6 +17,7 @@ import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class EventAdapter extends RecyclerView.Adapter<MyViewHolder> {
     private Context context;
@@ -33,7 +34,16 @@ public class EventAdapter extends RecyclerView.Adapter<MyViewHolder> {
     }
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        Glide.with(context).load(dataList.get(position).getEventImg()).into(holder.recImage);
+
+        //Glide.with(context).load(dataList.get(position).getEventImg()).into(holder.recImage);
+        //ADDED INSTITUTE IMAGE
+        String checkUrl = dataList.get(position).getProfileURL();
+        if(checkUrl != null){
+            Glide.with(context).load(dataList.get(position).getProfileURL()).into(holder.recImage);
+        }else{
+            holder.recImage.setImageResource(R.drawable.baseline_pfp);
+        }
+
         holder.recTitle.setText(dataList.get(position).getEventTitle());
         holder.recDesc.setText(dataList.get(position).getEventDsc());
         //FOr instisus name and status
@@ -52,7 +62,7 @@ public class EventAdapter extends RecyclerView.Adapter<MyViewHolder> {
                 //For two ape
                 intent.putExtra("Username", dataList.get(holder.getAdapterPosition()).getUsername());
                 intent.putExtra("Status", dataList.get(holder.getAdapterPosition()).getVerifyStatus());
-
+                intent.putExtra("ProfileURL", dataList.get(holder.getAdapterPosition()).getProfileURL());
                 context.startActivity(intent);
             }
         });

@@ -61,7 +61,7 @@ public class InstiDetail extends AppCompatActivity {
                         if(snapshot.exists()){
                             databaseReference1.child(name).child("verifyStats").setValue(status);
                             Toast.makeText(InstiDetail.this, "Approved", Toast.LENGTH_SHORT).show();
-                            Intent i = new Intent(InstiDetail.this, InstiDetail.class);
+                            Intent i = new Intent(InstiDetail.this, AdminActivity.class);
                             finish();
                             overridePendingTransition(0, 0);
                             startActivity(i);

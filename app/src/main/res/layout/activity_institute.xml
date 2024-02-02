@@ -6,13 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".InstituteActivity">
 
+    <ImageView
+        android:id="@+id/profileActivityFromInsti"
+        android:layout_width="53dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/ic_baseline_person_24" />
+
     <TextView
         android:id="@+id/InstituteUserName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Institute user name set hoga"
+        android:layout_marginEnd="16dp"
+        android:text="InstiName"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:textSize="18dp"
@@ -25,55 +36,33 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:text="Status dikhega"
+        android:layout_toEndOf="@+id/InstituteUserName"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
         android:textSize="18dp"
         android:textColor="@color/lavender"/>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="10dp"
         android:layout_below="@id/InstituteUserName"
         android:layout_width="match_parent"
-        android:layout_height="450dp"
+        android:layout_height="wrap_content"
         android:id="@+id/recyclerView"
         android:scrollbars="vertical"/>
 
     <Button
         android:id="@+id/fab"
         android:text="Upload"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="24dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/lavender_border"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
        />
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_above="@+id/fab"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Button
-            android:id="@+id/profileActivityFromInsti"
-            android:text="Profile"
-            android:layout_marginBottom="20dp"
-            android:layout_marginStart="15dp"
-            android:layout_width="170dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/lavender_border"
-            />
-        <Button
-            android:id="@+id/signoutBtn1"
-            android:text="Signout"
-            android:layout_marginBottom="20dp"
-            android:layout_marginStart="15dp"
-            android:layout_marginEnd="20dp"
-            android:layout_width="170dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/lavender_border"
-            />
-    </LinearLayout>
+
 
 
 </RelativeLayout>

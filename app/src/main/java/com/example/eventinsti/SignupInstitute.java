@@ -1,8 +1,15 @@
 package com.example.eventinsti;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -16,15 +23,21 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 
 public class SignupInstitute extends AppCompatActivity {
     FirebaseDatabase database;
-    DatabaseReference reference;
+    DatabaseReference reference,reference2;
+    Button uploadInstituteProfie;
     LinearLayout clgTypeLayout,degreeLayout,BranchLayout;
     private static final String[] sdegreeType = {"Select Degree: ","B.A", "B.com", "B.sc", "B.tech"};
-    private static final String[] sbranchType = {"Select Branch: ","IT/CO", "Mechanical", "Electrical", "Civil"};
+    private static final String[] sbranchType = {"Select Branch: ","IT/CO", "Mechanical", "Electrical", "Civil","Production","Textile"};
 
     //String For checkbox concat
     String arts="";
@@ -36,8 +49,8 @@ public class SignupInstitute extends AppCompatActivity {
     CheckBox checkbox_science,checkbox_commerce,checkbox_arts;
     CheckBox checkbox_BA, checkbox_BCOM, checkbox_BSC, checkbox_BTECH;
     String BA="",BCOM="",BSC="",BTECH="";
-    CheckBox checkbox_IT,checkbox_ME,checkbox_EJ,checkbox_CE;
-    String IT="",ME="",EJ="",CE="";
+    CheckBox checkbox_IT,checkbox_ME,checkbox_EJ,checkbox_CE,checkbox_PRO,checkbox_TXT;
+    String IT="",ME="",EJ="",CE="",PRO="",TXT="";
     Button signupInstiSubmit;
     EditText inameI,icodeI,adressI,phoneI;
 
@@ -51,6 +64,9 @@ public class SignupInstitute extends AppCompatActivity {
     String branchType="Not Applicable";
     String susername="";
 
+    Uri uri;
+    String picURL="";
+    String verifyStats="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,6 +92,37 @@ public class SignupInstitute extends AppCompatActivity {
         checkbox_ME = findViewById(R.id.checkbox_ME);
         checkbox_EJ = findViewById(R.id.checkbox_EJ);
         checkbox_CE = findViewById(R.id.checkbox_CE);
+        checkbox_PRO = findViewById(R.id.checkbox_Production);
+        checkbox_TXT = findViewById(R.id.checkbox_Textile);
+
+
+
+        database = FirebaseDatabase.getInstance();
+
+
+        uploadInstituteProfie = findViewById(R.id.uploadInstituteProfie);
+        ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(
+                new ActivityResultContracts.StartActivityForResult(),
+                new ActivityResultCallback<ActivityResult>() {
+                    @Override
+                    public void onActivityResult(ActivityResult result) {
+                        if(result.getResultCode() == Activity.RESULT_OK){
+                            Intent data = result.getData();
+                            uri = data.getData();
+                        }else{
+                            Toast.makeText(SignupInstitute.this, "No PICTURE selected", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                }
+        );
+        uploadInstituteProfie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent photoPicker = new Intent(Intent.ACTION_PICK);
+                photoPicker.setType("image/*");
+                activityResultLauncher.launch(photoPicker);
+            }
+        });
 
         //Value settiing DegreeType
         checkbox_BA.setOnClickListener(new View.OnClickListener() {
@@ -154,9 +201,27 @@ public class SignupInstitute extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(checkbox_CE.isChecked()){
-                    EJ = "EJ ";
+                    CE = "CE ";
                 }else {
-                    EJ ="";
+                    CE ="";
+                }
+            }
+        });checkbox_PRO.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(checkbox_PRO.isChecked()){
+                    PRO = "PRO ";
+                }else {
+                    PRO ="";
+                }
+            }
+        });checkbox_TXT.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(checkbox_TXT.isChecked()){
+                    TXT = "TXT ";
+                }else {
+                    TXT ="";
                 }
             }
         });
@@ -241,7 +306,7 @@ public class SignupInstitute extends AppCompatActivity {
             instituteAddress = adressI.getText().toString();
             institutePhone = phoneI.getText().toString();
             //branchType
-            branchType= IT + ME + EJ + CE;
+            branchType= IT + ME + EJ + CE + PRO + TXT;
             //degreeType
             degreeType=BA+BCOM+BSC+BTECH;
             //For College Feilds
@@ -250,20 +315,49 @@ public class SignupInstitute extends AppCompatActivity {
 
             Intent intent = getIntent();
             susername = intent.getStringExtra("username");
-            uploadData();
+            verifyStats = intent.getStringExtra("verifyStats");
+            profPicUploader();
+            Toast.makeText(SignupInstitute.this, "Success", Toast.LENGTH_SHORT).show();
             Intent i = new Intent(SignupInstitute.this,LoginActivity.class);
             startActivity(i);
+            finish();
         }
     });
 
     }
 
     private void uploadData() {
-        database = FirebaseDatabase.getInstance();
         reference = database.getReference("Institute Data");
         HelperClassSignupInstitute hp = new HelperClassSignupInstitute( susername, instituteName, instituteCode, instituteAddress, institutePhone, collegeType, collegeFields, degreeType, branchType);
         reference.child(susername).setValue(hp);
         Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show();
+    }
+
+
+    public void profPicUploader(){
+        StorageReference storageReference = FirebaseStorage.getInstance().getReference().child("Institute pfp")
+                .child(uri.getLastPathSegment());
+        AlertDialog.Builder builder = new AlertDialog.Builder(SignupInstitute.this);
+        builder.setCancelable(false);
+        builder.setView(R.layout.progress_layout);
+        AlertDialog dialog = builder.create();
+        dialog.show();
+
+        storageReference.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+            @Override
+            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                Task<Uri> uriTask = taskSnapshot.getStorage().getDownloadUrl();
+                while(!uriTask.isComplete());
+                Uri urlImage = uriTask.getResult();
+                picURL = urlImage.toString();
+                reference2 = database.getReference("Instiusers");
+                HelperClass2 helperClass2 = new HelperClass2(susername, verifyStats, picURL);
+                reference2.child(susername).setValue(helperClass2);
+                uploadData();
+                dialog.dismiss();
+            }
+        });
+
     }
 
 

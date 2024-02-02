@@ -7,7 +7,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -19,12 +21,20 @@ import com.google.firebase.database.ValueEventListener;
  public class ProfileActivity extends AppCompatActivity {
      TextView profileName, profileEmail, profileUsername, profilePassword;
      TextView titleName, titleUsername;
-     Button editProfile;
+     LinearLayout ly;
+     Button editProfile,signoutBtn1;
      @Override
      protected void onCreate(Bundle savedInstanceState) {
          super.onCreate(savedInstanceState);
          setContentView(R.layout.activity_profile);
+         signoutBtn1 = findViewById(R.id.signoutBtn1);
+
          profileName = findViewById(R.id.profileName);
+         //REMOVE BELOW TO SEE TYPE
+         ly = findViewById(R.id.ly);
+         ly.setVisibility(View.GONE);
+
+
          profileEmail = findViewById(R.id.profileEmail);
          profileUsername = findViewById(R.id.profileUsername);
          profilePassword = findViewById(R.id.profilePassword);
@@ -38,10 +48,25 @@ import com.google.firebase.database.ValueEventListener;
                  passUserData();
              }
          });
+
+         signoutBtn1.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+                 Intent i = new Intent(ProfileActivity.this,LoginActivity.class);
+                 startActivity(i);
+                 finish();
+             }
+         });
      }
      public void showAllUserData(){
          Intent intent = getIntent();
-         String nameUser = intent.getStringExtra("name");
+         String nameUser1 = intent.getStringExtra("name");
+         String nameUser = "UNKOWN";
+                 if(nameUser1.equals("i")){
+                     nameUser = "INSTITUTE PROFILE";
+                 }else {
+                     nameUser = "STUDENT PROFILE";
+                 }
          String emailUser = intent.getStringExtra("email");
          String usernameUser = intent.getStringExtra("username");
          String passwordUser = intent.getStringExtra("password");
@@ -74,6 +99,7 @@ import com.google.firebase.database.ValueEventListener;
              }
              @Override
              public void onCancelled(@NonNull DatabaseError error) {
+                 Toast.makeText(ProfileActivity.this, "ERROR"+error.toException().getLocalizedMessage(), Toast.LENGTH_SHORT).show();
              }
          });
      }

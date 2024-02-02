@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.github.clans.fab.FloatingActionButton;
@@ -25,10 +26,11 @@ import java.util.List;
 
 public class InstituteActivity extends AppCompatActivity {
     TextView InstituteUserName,vStatus;
-    String UserName,svStatus;
+    String UserName,svStatus,profileURL;
     String nameF,emailF,passwordF;
 
-    Button fab,profileActivityFromInsti,signoutBtn1;
+    Button fab;
+    ImageView profileActivityFromInsti;
 
     RecyclerView recyclerView;
     List<UploadHelperClass> dataList;
@@ -40,7 +42,6 @@ public class InstituteActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_institute);
         InstituteUserName = findViewById(R.id.InstituteUserName);
-        signoutBtn1 = findViewById(R.id.signoutBtn1);
         vStatus = findViewById(R.id.vStatus);
         fab = findViewById(R.id.fab);
         profileActivityFromInsti = findViewById(R.id.profileActivityFromInsti);
@@ -58,6 +59,7 @@ public class InstituteActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 svStatus = snapshot.child(UserName).child("verifyStats").getValue(String.class);
+                profileURL = snapshot.child(UserName).child("profileURL").getValue(String.class);
                 vStatus.setText(svStatus);
             }
 
@@ -110,14 +112,7 @@ public class InstituteActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        signoutBtn1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(InstituteActivity.this,LoginActivity.class);
-                startActivity(i);
-                finish();
-            }
-        });
+
         //Fabb onclick redirect to Upload image section
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -125,6 +120,7 @@ public class InstituteActivity extends AppCompatActivity {
                 Intent i = new Intent(InstituteActivity.this, UploadActivity.class);
                 i.putExtra("username",UserName);
                 i.putExtra("verifyStatus",svStatus);
+                i.putExtra("profileURL",profileURL);
                 startActivity(i);
             }
         });

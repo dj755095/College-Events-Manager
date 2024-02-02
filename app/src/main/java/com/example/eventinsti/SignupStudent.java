@@ -29,8 +29,10 @@ public class SignupStudent extends AppCompatActivity {
     Button submit;
     RadioButton genderBtn, classBtn;
     private static final String[] sclass = {"Select class: ","Science", "Commerce", "Arts", "Graduation Degree", "Diploma"};
-    private static final String[] sbranch = {"Select Branch: ","IT/CO", "Mechanical", "Electrical", "Civil"};
-    private static final String[] syear = {"Select Year: ","1st", "2nd", "3rd", "4th"};
+    private static final String[] sbranch = {"Select Branch: ","IT/CO", "Mechanical", "Electrical", "Civil","Production","Textile"};
+
+    //Year Sinner
+    private static final String[] syear = {"Select Year: ","1st", "2nd", "3rd"};
     private static final String[] sgrad = {"Select Degree: ","B.A", "B.com", "B.sc", "B.tech"};
 
     String studyClass = "";
@@ -95,9 +97,14 @@ public class SignupStudent extends AppCompatActivity {
                 genderBtn = (RadioButton) findViewById(genderID);
                 gender = genderBtn.getText().toString();
 
-                int classID = classRadio.getCheckedRadioButtonId();
-                classBtn = (RadioButton) findViewById(classID);
-                juniorStudyClass = classBtn.getText().toString();
+                if(studyClass.equals("Arts")||studyClass.equals("Commerce")||studyClass.equals("Science")){
+                    int classID = classRadio.getCheckedRadioButtonId();
+                    classBtn = (RadioButton) findViewById(classID);
+                    juniorStudyClass = classBtn.getText().toString();
+                    studyBranch = "ELT";
+                }
+
+
 
                 name =nameS.getText().toString();
                 instituteName =inameS.getText().toString();

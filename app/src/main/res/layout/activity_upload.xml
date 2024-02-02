@@ -14,6 +14,7 @@
         android:layout_marginTop="2dp"
         android:layout_marginEnd="20dp"
         android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
         app:cardCornerRadius="30dp"
         app:cardElevation="20dp">
 
@@ -34,12 +35,12 @@
                 android:textColor="@color/lavender"/>
 
             <ImageView
+                android:id="@+id/uploadImage"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:src="@drawable/uploadimg"
-                android:id="@+id/uploadImage"
                 android:layout_marginTop="10dp"
-                android:scaleType="fitXY"/>
+                android:scaleType="fitXY"
+                android:src="@drawable/uploadimg" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -90,6 +91,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Civil Engineering"/>
+            <CheckBox android:id="@+id/checkbox_PRO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Production Engineering"/>
+            <CheckBox android:id="@+id/checkbox_TXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Textile Engineering"/>
+            <CheckBox android:id="@+id/checkbox_ELT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11th -12th"/>
 
 
             <Button

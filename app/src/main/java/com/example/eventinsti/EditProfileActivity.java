@@ -7,13 +7,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class EditProfileActivity extends AppCompatActivity {
-    EditText editName, editEmail, editUsername, editPassword;
+    EditText editName, editEmail, editPassword;
+    TextView editUsername;
     Button saveButton;
     String nameUser, emailUser, usernameUser, passwordUser;
     DatabaseReference reference;
@@ -23,6 +25,10 @@ public class EditProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_edit_profile);
         reference = FirebaseDatabase.getInstance().getReference("users");
         editName = findViewById(R.id.editName);
+
+        //Remove This if you wanT TO SWITCH TYPES EG STUDENT TO INSTITUE(remove below line and write type as i,s,a insti,student ,admin)
+        editName.setVisibility(View.GONE);
+
         editEmail = findViewById(R.id.editEmail);
         editUsername = findViewById(R.id.editUsername);
         editPassword = findViewById(R.id.editPassword);
@@ -33,6 +39,7 @@ public class EditProfileActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (isNameChanged() || isPasswordChanged() || isEmailChanged()){
                     Toast.makeText(EditProfileActivity.this, "Saved", Toast.LENGTH_SHORT).show();
+                    passData();
                 } else {
                     Toast.makeText(EditProfileActivity.this, "No Changes Found", Toast.LENGTH_SHORT).show();
                 }
@@ -76,5 +83,15 @@ public class EditProfileActivity extends AppCompatActivity {
         editEmail.setText(emailUser);
         editUsername.setText(usernameUser);
         editPassword.setText(passwordUser);
+    }
+
+    public void passData(){
+        Intent intent = new Intent(EditProfileActivity.this, ProfileActivity.class);
+        intent.putExtra("name", nameUser);
+        intent.putExtra("email", emailUser);
+        intent.putExtra("username", usernameUser);
+        intent.putExtra("password", passwordUser);
+        startActivity(intent);
+        finish();
     }
 }
