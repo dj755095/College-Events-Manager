@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/EventInsti.iml" filepath="$PROJECT_DIR$/.idea/EventInsti.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/EventInsti.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/EventInsti.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/EventInsti.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/EventInsti.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/EventInsti.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/EventInsti.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/EventInsti.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/EventInsti.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>

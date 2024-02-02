@@ -1,0 +1,7 @@
+com.example.eventinsti.test.app-annotation-experimental-1.3.0-0 C:\Users\Divyan\.gradle\caches\transforms-3\59e606e666b1c0b6c08ca74c8c2e7629\transformed\annotation-experimental-1.3.0\res
+com.example.eventinsti.test.app-core-1.5.0-1 C:\Users\Divyan\.gradle\caches\transforms-3\fdc2a19c408400a705e636cf6b68b105\transformed\core-1.5.0\res
+com.example.eventinsti.test.app-androidTest-2 C:\Users\Divyan\AndroidStudioProjects\EventInsti\app\build\generated\res\resValues\androidTest\debug
+com.example.eventinsti.test.app-androidTest-3 C:\Users\Divyan\AndroidStudioProjects\EventInsti\app\build\generated\res\rs\androidTest\debug
+com.example.eventinsti.test.app-mergeDebugAndroidTestResources-4 C:\Users\Divyan\AndroidStudioProjects\EventInsti\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.eventinsti.test.app-mergeDebugAndroidTestResources-5 C:\Users\Divyan\AndroidStudioProjects\EventInsti\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.eventinsti.test.app-merged_res-6 C:\Users\Divyan\AndroidStudioProjects\EventInsti\app\build\intermediates\merged_res\debugAndroidTest
